@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Title: "
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Release Date: "
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:id="@+id/detail_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:src="@android:mipmap/sym_def_app_icon" />
+
+        <TextView
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/tv_vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/text_margin_bottom"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:text="Vote Average: "
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/tv_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/text_margin_bottom"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:text="Popular: "
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <TextView
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/tv_plot_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:text="Plot synopsis: "
+            android:textSize="@dimen/text_size_medium" />
+
+
+    </LinearLayout>
+</ScrollView>
